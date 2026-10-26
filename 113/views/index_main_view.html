@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>僑光科技大學 - 二手書校園面交網 (113 模組化專案)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+    <!-- 導覽頭部 -->
+    <header class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="font-bold text-xl flex items-center cursor-pointer">
+                <span class="bg-amber-400 text-blue-900 rounded-full w-8 h-8 flex items-center justify-center mr-2 text-sm font-bold">僑</span>
+                僑光二手書面交網 (113 專案目錄)
+            </h1>
+            <div id="navUserArea">
+                <button class="bg-amber-400 text-blue-950 font-bold px-3 py-1.5 rounded-lg text-xs">學生登入</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要內容視圖區域 -->
+    <main class="max-w-7xl mx-auto px-4 py-6 flex-1 w-full">
+        <div class="bg-white p-4 rounded-xl shadow-sm mb-6 flex flex-wrap justify-between items-center gap-4 border border-slate-200">
+            <div class="flex space-x-2">
+                <button class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-lg">全部學院</button>
+                <button class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-lg">商管學院</button>
+                <button class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-lg">設資學院</button>
+                <button class="px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-lg">觀餐學院</button>
+            </div>
+            <input type="text" placeholder="搜尋書名或課本..." class="text-xs border px-3 py-1.5 rounded-full w-56 focus:outline-none focus:ring-1 focus:ring-blue-500">
+        </div>
+
+        <div id="bookContainer" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- 書籍動態內容 -->
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                <div class="h-32 bg-slate-100 rounded-lg flex items-center justify-center text-slate-400 mb-3">
+                    <i class="fa-solid fa-book text-4xl"></i>
+                </div>
+                <span class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-bold">設計與資訊學院</span>
+                <h3 class="font-bold text-sm text-slate-800 mt-2">Java物件導向程式設計</h3>
+                <p class="text-xs text-amber-600 font-semibold mt-1"><i class="fa-solid fa-location-dot"></i> 圖資大樓 1F</p>
+                <div class="mt-3 flex justify-between items-center pt-2 border-t">
+                    <span class="text-xs text-slate-400">近全新</span>
+                    <span class="text-base font-bold text-blue-600">NT$ 320</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="bg-slate-800 text-slate-400 text-center py-4 text-xs">
+        &copy; 2026 僑光科技大學 校內學生二手書面交網 (113 模組化專案)
+    </footer>
+</body>
+</html>
