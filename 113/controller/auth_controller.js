@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User = require('../model/user_model');
 
 /**
  * 會員驗證與註冊控制器

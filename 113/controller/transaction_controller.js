@@ -1,6 +1,6 @@
-const Transaction = require('../models/Transaction');
-const Book = require('../models/Book');
-const Message = require('../models/Message');
+const Transaction = require('../model/transaction_model');
+const Book = require('../model/book_model');
+const Message = require('../model/message_model');
 
 /**
  * 面交交易與私訊控制器

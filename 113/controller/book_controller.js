@@ -1,4 +1,4 @@
-const Book = require('../models/Book');
+const Book = require('../model/book_model');
 
 /**
  * 二手書控制器 (獲取列表、關鍵字搜尋、刊登、流標下架)

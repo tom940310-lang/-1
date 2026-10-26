@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ocu-book-exchange
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false

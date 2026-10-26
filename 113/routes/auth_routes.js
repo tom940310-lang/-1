@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const authController = require('../controllers/authController');
+const authController = require('../controller/auth_controller');
 
 /**
  * 學生身分驗證 API 路由

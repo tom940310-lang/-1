@@ -1,0 +1,17 @@
+{
+  "name": "ocu-book-exchange",
+  "version": "1.0.0",
+  "private": true,
+  "description": "僑光科技大學二手書面交網",
+  "main": "Application/application_main_entry.js",
+  "scripts": {
+    "start": "node Application/application_main_entry.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
+}
